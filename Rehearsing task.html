@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>  Rehearsing task  </title>
+	<style type="text/css">
+		body {
+			margin-left: 2cm;
+			font-family: times-new-roman;
+			background: rgb(204,204,204);
+		}
+		ul.answer {
+			list-style: square;
+		}
+		div.example {
+			border: 1px solid black;
+		}
+		span.example {
+			border: 1px solid black;
+		}
+		span.a {
+			color: blue;
+		}
+		span.b {
+			color: grey;
+		}
+		span.c {
+			color: purple;
+		}
+	
+		div.b {
+			margin-left: 0.5cm;
+		}
+		div.c {
+			margin-left: 1cm;
+		}
+		a.link {
+			font-family: lucida;
+			font-size: 12px;
+			color: #555;
+			text-decoration: none;
+		}
+		a.link:hover {
+			font-family: lucida;
+			font-size: 14px;
+			font-weight: bold;
+			color: green;
+			text-decoration: none;
+		}
+		a.link:visited {
+			font-family: lucida;
+			font-size: 12px;
+			color: red;
+			text-decoration: none;
+		}
+		page {
+			background: white;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 0.5cm;
+			box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+		}
+		page[size="A4"] {  
+			width: 21cm;
+			height: 29.7cm; 
+		}
+ 
+
+ 
+	</style>
+	<link rel="icon" href="https://cdn.onlinewebfonts.com/svg/img_99055.png">
+</head>
+
+<body>
+	
+	<page size="A4">
+	<h1 style="margin-left:5cm;">TASKS FOR REHEARSING</h1>
+	<hr style="border:2px solid black"><hr color="black">
+	
+	<ol>
+		<li>What are the obligatory elements in each (X)HTML document?</li>
+			<ul class="answer">
+				<li>&lt;html&gt;</li>
+				<li>&lt;head&gt;</li>
+				<li>&lt;title&gt;</li>
+				<li>&lt;body&gt;</li>
+			</ul>
+		<br>
+		<li>What&apos;s DOCTYPE declaration meant for?</li>
+			<ul class="answer">
+				<li>Doctype stands for Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document. This helps the browser to handle and load it properly.</li>
+			</ul>
+		<br>
+		<li>What is an URL? Give examples both of use of absolute and relative URLs.</li>
+			<ul class="answer">
+				<li>URL stands for Uniform Resource Locator. It is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.</li>
+					<dd>
+					<li><a class="link" href="https://www.google.com/webhp?hl=fi&sa=X&ved=0ahUKEwjx0aKq-6TsAhUDxYsKHaj0BVQQPAgI"target="_blank">Example link to Google using absolute URL</a></li>
+					<li><a href="rehearsing task.html">Example link to this document using relative URL</a> (I'm not really sure if this counts, but I don't have another page on this website to link to)</li>
+					</dd>
+			</ul>
+		<br>
+		<li>How is it possible to define the text visible on the top of a browsers window and/or on a tab? 
+		<br>How about adding an icon next to the title? Give examples.</li>
+			<ul class="answer">
+				<li>Text is added to the top of a browser and/or on a tab by adding your text inside &lt;title&gt; element within the &lt;head&gt;</li>
+				<li>An icon can be added next to the text by adding a &ltlink&gt;, which has either an absolute or a relative URL in it, into the &lt;head&gt; element</li>
+			</ul>
+		<br>
+		<li>How do block-level and inline level elements differ from each other? Give examples.</li>
+			<ul class="answer">
+				<li><div class="example">The &lt;div&gt; element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</div></li>
+				<li>The <span class="example">&lt;span&gt;</span> element is an inline element, and will not start on a new line and only takes up as much width as necessary.</li>
+			</ul>
+		<br>
+		<li>Find out a piece of Java code and make it appear on your web page the same way it appears in a text editor.</li>
+			<ul class="answer">
+				<div class="a">
+					<br>
+					<li><span class="a">import</span> java.util.Scanner&#59;
+					
+					<br><br><span class="a">public class</span> HelloWorld <span class="a">&#123;</span>
+				</div>
+				<div class="b">
+					<br><span class="a">public static void</span> main<span class="a">&#40;<span class="c">String</span>[]</span> args<span class="a">&#41; &#123;</span>
+				</div>
+				<div class="c">
+					<br>Scanner reader <span class="a">= new</span> Scanner<span class="a">&#40;</span>System.<span class="a">in&#41;&#59;</span>
+					<br>System.out.print<span class="a">&#40;</span><span class="b">"Enter a number:"</span><span class="a">&#41;&#59;</span>
+					
+					<br><br><span class="a">int</span> number = reader.nextInt<span class="a">&#40;&#41;&#59;</span>
+					
+					<br><br>System.out.println<span class="a">&#40;</span><span class="b">"You entered:"</span> + number<span class="a">&#41;&#59;</span>
+				</div>
+				<div class="b"<br><span class="a">&#125;</span></div>
+				<br><span class="a">&#125;</span></li>
+				<li>I might have done this the complicated way, but I didn't know how else to do it</li>
+			</ul>
+		</ol>
+		</page>
+		
+		<page size="A4">
+		<br>
+	<ol start="7">
+		<li>There are three different ways of adding CSS styles on an (X)HTML page. How? What are the benefits of each way?</li>
+			<ul class="answer">
+				<li style="font-weight: bold;">Inline</li>
+					<dd>
+						<li>Inline styling affects only the element you apply it to</li>
+						<li>Not much benefits
+					</dd>
+				<li style="font-weight: bold;">Internal</li>
+					<dd>
+						<li>Internal styling is embedded inside the &lt;head&gt; element and only apply to the page you are working on</li>
+						<li>I'd say the benefit is that you dont need a separate CSS file</li>
+					</dd>
+				<li style="font-weight: bold;">External</li>
+					<dd>
+						<li>External styles are used for the whole, multiple-page website and there is a separate CSS file</li>
+						<li>In my opinion the biggest benefits are: there is no long string of styling at the start of each page and that it applies the styling to all of the pages</li>
+					</dd>
+			</ul>
+		<br>
+		<li>How to create a nested list looking more or less as follows:</li>
+			<ul class="answer">
+				<li>Banana</li>
+				<li>Apple</li>
+					<ol style="list-style-type: lower-alpha;">
+						<li>Pinja</li>
+						<li>Samo</li>
+					</ol>
+				<li>Orange</li>
+			</ul>
+		<br>
+		<li>What are selectors in CSS? Give at least five examples of different kind of selectors (basic type selectors, class, id, and attribute selectors). Show them in use on your (X)HTML page</li>
+			<ul class="answer">
+				<li>In CSS, selectors are patterns used to select the element(s) you want to style.</li>
+					<dd>
+						<li>I have used selector while making this page</li>
+					</dd>
+			</ul>
+		<br>
+		<li>Create at least the following kinds of two links on your web page:</li>
+			<ol style="list-style-type: lower-alpha;">
+				<li>&nbsp;a text link, which shall appear first with font Lucida of size 12px and color #555; The link text shall not be underlined. When the user brings the mouse 
+				over the link text it shall change color, be bolded and be a bit larger. After the user has visited the link the looks of the link text shall be otherwise the same as in the start,
+				<br>but the color shall be different. </li>
+					<ul class="answer">
+						<li>I used the Google link from earlier to do this</li>
+					</ul>
+				<br>
+				<li>&nbsp;an image link without borders around the image. The resource which the link shall open shall be opened in a new window.</li>
+					<ul class="answer">
+				
+					<br>
+					<a href="https://www.youtube.com/watch?v=0SxT8GaiYDc&ab_channel=InfantAnnihilator" target="_blank">
+						<img src="https://www.looktothestars.org/photo/5037-steve-o/story_half_width.jpg" alt="Steve-o thumbs up">
+					</a>
+					</ul>
+			</ol>
+	</page>
+				
+</html>
